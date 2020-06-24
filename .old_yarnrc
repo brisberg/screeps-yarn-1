@@ -1,0 +1,3 @@
+always-auth true
+"@brisberg:registry" "https://npm.pkg.github.com/"
+"//npm.pkg.github.com/:_authToken" "3ea639366e09db8ff2e64097c4cb508d264a333a"
