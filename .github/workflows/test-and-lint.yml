@@ -35,7 +35,8 @@ jobs:
           ${{ runner.os }}-yarn-
 
       # Run all CI actions
+    - run: yarn config list
     - name: yarn install
-      run: yarn install --immutable
+      run: yarn install --frozen-lockfile --verbose
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GH_PKG_READ_TOKEN }}
